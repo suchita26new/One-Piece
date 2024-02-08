@@ -7,10 +7,7 @@
 
 body{
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    min-height: 190vh;
 }
 
 .main-width{
@@ -22,7 +19,6 @@ body{
 .hero{
     height: 100%;
     width: 100%;
-    min-height: 100vh;
     background: radial-gradient(#2E62A3,20%, #D70000);
     position: relative;
 }
@@ -98,7 +94,7 @@ nav ul li.btn:hover a{
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     text-transform: uppercase;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     word-wrap: break-word;
 }
@@ -127,18 +123,13 @@ nav ul li.btn:hover a{
 }
 
 .card .imbBx, .imbBx img{
-    width: 100;
+    width: 100%;
     height: 100%;
-}
-
-.content .contentBx{
-    font-family: 'Mitr', sans-serif;
-    text-align: center;
 }
 
 .card .content{
     position: absolute;
-    bottom: 0;
+    bottom: -160px;
     width: 100%;
     height: 160px;
     display: flex;
@@ -151,4 +142,63 @@ nav ul li.btn:hover a{
     border-radius: 15px;
     transition: bottom 0.5s;
     transition-delay: 0.65s;
+}
+
+.card:hover .content{
+    bottom: 0;
+    transition-delay: 0s;
+}
+
+.content .contentBx h3{
+    text-transform: uppercase;
+    color: rgb(5, 5, 5);
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 15px;
+    line-height: 1.1em;
+    transition: 0.5s;
+    transition-delay: 0.6s;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.card:hover .content .contentBx h3{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.content .contentBx h3 span{
+    position: relative;
+    bottom: -3px;
+    font-family: 'Mitr', sans-serif; 
+    font-size: 17px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.content .sci{
+    position: relative;
+    bottom: 10px;
+    display: flex;
+}
+
+.content .sci li{
+    list-style: none;
+    margin:  0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.2s* var(--i));
+}
+
+.card:hover .content .sci li{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.content .sci li a{
+    color: white;
+    font-size: 24px;
 }
