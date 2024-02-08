@@ -7,19 +7,19 @@
 
 body{
     overflow: hidden;
-    min-height: 190vh;
+    min-height: 300vh;
 }
 
 .main-width{
-    width: 1400px;
-    max-width: 95%;
+    width: 1600px;
+    max-width: 120%;
     margin: 0 auto;
 }
 
 .hero{
     height: 100%;
     width: 100%;
-    background: radial-gradient(#2E62A3,20%, #D70000);
+    background: radial-gradient(#3d7ac4,20%, #e05959);
     position: relative;
 }
 

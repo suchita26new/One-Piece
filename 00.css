@@ -7,11 +7,12 @@
 
 body{
     overflow: hidden;
+    min-height: 300vh;
 }
 
 .main-width{
-    width: 1400px;
-    max-width: 95%;
+    width: 1600px;
+    max-width: 120%;
     margin: 0 auto;
 }
 
@@ -19,7 +20,7 @@ body{
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: radial-gradient(#FFCD00,20%, #D70000);
+    background: radial-gradient(#f2c924,20%, #d76c6c);
     position: relative;
 }
 
