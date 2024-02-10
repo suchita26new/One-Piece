@@ -11,8 +11,8 @@ body{
 }
 
 .main-width{
-    width: 1600px;
-    max-width: 120%;
+    width: 90%;
+    max-width: 110%;
     margin: 0 auto;
 }
 
@@ -32,7 +32,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 0 30px;
+    padding: 10px 0 30px;
 }
 
 nav ul li{
