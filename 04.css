@@ -7,24 +7,29 @@
 
 body{
     overflow: hidden;
-    min-height: 300vh;
 }
 
 .main-width{
-    width: 1600px;
-    max-width: 120%;
+    position: relative;
+    width: 70%;
+    height: 150vh;
     margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .hero{
     height: 100%;
     width: 100%;
-    background: radial-gradient(#efeb23,20%, #f59621);
+    background: radial-gradient(#efeb23,20%, #f4a442);
     position: relative;
 }
 
 .hero header .logo img{
+    position: relative;
     display: block;
+    width: 250px;
 }
 
 .hero header{
@@ -78,39 +83,37 @@ nav ul li.btn:hover a{
     transition: .4s;
 }
 
-
-
 .heading {
     color: #ffffff;
     font-size: 50px;
     text-align: center;
-    margin-top: 30px;
-    font-family: "Raleway", sans-serif;
+    margin-top: -50px;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 130%;
     margin: 65px auto;
 }
 
-.hero-content {
+.hero1-content {
     flex: 1;
-    width: 600px;
+    width: 300px;
     margin: 0px 25px;
     animation: fadeInUp 2s ease;
+    align-items: center;
 }
 
-.hero-content h2 {
+.hero1-content h2 {
     font-size: 30px;
     margin-bottom: 20px;
     color: #f9f9f9;
     font-family: "Mitr", sans-serif;
 }
 
-.hero-content p {
+.hero1-content p {
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 40px;
@@ -118,9 +121,9 @@ nav ul li.btn:hover a{
     font-family: "Mitr", sans-serif;
 } 
 
-.hero-content button {
+.hero1-content button {
     display: inline-block;
-    background-color: #f78a63;
+    background-color: #f0991e;
     color: #fff;
     padding: 12px 24px;
     border-radius: 40px;
@@ -128,24 +131,25 @@ nav ul li.btn:hover a{
     border: none;
     cursor: pointer;
     transition: 0.3s ease;
+    font-family: "Mitr", sans-serif;
 }
 
-.hero-content button:hover {
+.hero1-content button:hover {
     background-color: #fcfcfc;
     transform: scale(1.1);
     
 }
 
-.hero-image {
+.hero1-image {
     flex: 1;
-    width: 600px;
+    width: 50px;
+    height: 50%;
     margin: auto;
     animation: fadeInRight 2s ease;
 }
 
 img {
-    width: 100%;
-    height: auto;
+    width: 50%;
     border-radius: 50px;
 }
 
@@ -163,22 +167,22 @@ img {
         margin: 0px;
         padding: 0px 40px;
     }
-    .hero-content{
+    .hero1-content{
         width: 100%;
         margin: 35px 0px;
     }
-    .hero-content h2{
+    .hero1-content h2{
         font-size: 30px;
     }
-    .hero-content p{
+    .hero1-content p{
         font-size: 18px;
         margin-bottom: 20px;
     }
-    .hero-content button{
+    .hero1-content button{
         font-size: 16px;
         padding:8px 16px ;
     }
-    .hero-image{
+    .hero1-image{
         width: 100%;
     }
 }
