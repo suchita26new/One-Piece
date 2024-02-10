@@ -10,9 +10,14 @@ body{
 }
 
 .main-width{
+    position: relative;
     width: 90%;
     height: 250vh;
     margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero{
