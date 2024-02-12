@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+.main-width{
+    position: relative;
+    width: 70%;
+    height: 150vh;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(#49166c,20%, #fb9292);
+    position: relative;
+}
+
+.hero header .logo img{
+    position: relative;
+    display: block;
+    width: 250px;
+}
+
+.hero header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0 30px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 60px;
+    font-size: 20px;
+    font-family: 'Mitr', sans-serif;
+    font-weight: 100;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+}
+
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus{
+    border-bottom: 2px solid white;
+}
+
+nav ul li.active a{
+    border-bottom: 2px solid white;
+}
+
+.heading {
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130%;
+    margin: 65px auto;
+}
+
+.hero1-content {
+    flex: 1;
+    width: 300px;
+    margin: 0px 25px;
+    animation: fadeInUp 2s ease;
+    align-items: center;
+}
+
+.hero1-content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #f9f9f9;
+    font-family: "Mitr", sans-serif;
+}
+
+.hero1-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #fdfafa;
+    font-family: "Mitr", sans-serif;
+} 
+
+.hero1-content button {
+    display: inline-block;
+    background-color: #4d1957;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 40px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: "Mitr", sans-serif;
+}
+
+.hero1-content button:hover {
+    background-color: #fcfcfc;
+    transform: scale(1.1);
+    
+}
+
+.hero1-image {
+    flex: 1;
+    width: 50px;
+    height: 50%;
+    margin: auto;
+    animation: fadeInRight 2s ease;
+}
+
+img {
+    width: 50%;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 768px){
+    .heading h1{
+        font-size: 45px;
+        margin-top: 30px;
+    }
+    .hero{
+        margin: 0px;
+    }
+    .container{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+    .hero1-content{
+        width: 100%;
+        margin: 35px 0px;
+    }
+    .hero1-content h2{
+        font-size: 30px;
+    }
+    .hero1-content p{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .hero1-content button{
+        font-size: 16px;
+        padding:8px 16px ;
+    }
+    .hero1-image{
+        width: 100%;
+    }
+}
+
+@keyframes fadeInUp {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInRight {
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
